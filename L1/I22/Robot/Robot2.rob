@@ -1,0 +1,36 @@
+obj0 reacteur 1 11 0 -1 -1 0 0 0 -1 -1 505 265 est
+obj1 reacteur 1 13 1 159 obj32 0 0 0 -1 -1 45 265 ouest
+obj2 reacteur 1 15 1 46 obj10 0 0 0 -1 -1 285 140 nord
+obj3 reacteur 1 17 0 42 obj9 0 0 0 -1 -1 285 140 sud
+obj4 radar 0 0 0 -1 -1 1 19 0 82 obj18 440 310 est
+obj5 radar 0 0 0 -1 -1 1 23 0 96 obj21 110 220 ouest
+obj6 radar 0 0 0 -1 -1 1 27 0 52 obj12 320 190 nord
+obj7 radar 0 0 0 -1 -1 1 31 0 72 obj17 230 330 sud
+obj8 not 1 35 0 55 obj12 1 38 1 56 obj13 368 87 sud
+obj9 and 2 39 1 106 obj23 40 0 141 obj29 1 42 0 17 obj3 271 303 sud
+obj10 or 2 43 1 145 obj30 44 0 171 obj34 1 46 1 15 obj2 275 168 sud
+obj12 node 1 52 0 27 obj6 2 54 0 161 obj33 55 0 35 obj8 317 94 sud
+obj13 node 1 56 1 38 obj8 2 58 1 138 obj29 59 1 64 obj15 413 88 sud
+obj14 not 1 60 0 84 obj18 1 63 1 92 obj20 417 365 sud
+obj15 node 1 64 1 59 obj13 2 66 1 142 obj30 67 1 68 obj16 456 79 sud
+obj16 node 1 68 1 67 obj15 2 70 1 199 obj38 71 1 175 obj35 520 119 sud
+obj17 node 1 72 0 31 obj7 2 74 0 160 obj33 75 0 206 obj39 195 322 sud
+obj18 node 1 82 0 19 obj4 2 84 0 60 obj14 85 0 88 obj19 425 311 sud
+obj19 node 1 88 0 85 obj18 2 90 0 139 obj29 91 0 198 obj38 439 369 sud
+obj20 node 1 92 1 63 obj14 2 94 1 143 obj30 95 1 100 obj22 418 415 sud
+obj21 not 1 96 0 23 obj5 1 99 1 104 obj23 122 220 sud
+obj22 node 1 100 1 95 obj20 2 102 1 146 obj31 103 1 174 obj35 389 467 sud
+obj23 node 1 104 1 99 obj21 2 106 1 39 obj9 107 1 112 obj25 36 161 sud
+obj25 node 1 112 1 107 obj23 2 114 1 147 obj31 115 1 120 obj27 47 106 sud
+obj27 node 1 120 1 115 obj25 2 122 1 191 obj37 123 1 205 obj39 97 98 sud
+obj29 and 2 138 1 58 obj13 139 0 90 obj19 1 141 0 40 obj9 384 268 sud
+obj30 and 2 142 1 66 obj15 143 1 94 obj20 1 145 1 43 obj10 401 303 sud
+obj31 and 2 146 1 102 obj22 147 1 114 obj25 1 149 1 168 obj34 105 472 sud
+obj32 or 2 156 0 216 obj40 157 1 194 obj37 1 159 1 13 obj1 91 265 sud
+obj33 and 2 160 0 74 obj17 161 0 54 obj12 1 163 0 169 obj34 173 276 sud
+obj34 and 2 168 1 149 obj31 169 0 163 obj33 1 171 0 44 obj10 218 176 sud
+obj35 and 2 174 1 103 obj22 175 1 71 obj16 1 177 1 192 obj37 468 504 sud
+obj37 and 2 191 1 122 obj27 192 1 177 obj35 1 194 1 157 obj32 126 400 sud
+obj38 and 2 198 0 91 obj19 199 1 70 obj16 1 201 0 214 obj40 480 403 sud
+obj39 and 2 205 1 123 obj27 206 0 75 obj17 1 208 0 213 obj40 161 349 sud
+obj40 and 2 213 0 208 obj39 214 0 201 obj38 1 216 0 156 obj32 33 387 sud
