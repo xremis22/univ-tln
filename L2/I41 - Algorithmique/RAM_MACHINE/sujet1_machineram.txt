@@ -1,0 +1,9 @@
+READ ; lire la première valeur et mettre sur ACC.
+STORE 10; garder la valeur emp 10.
+READ ; lire la 2è valeur et mettre sur l'ACC.
+JUMZ 08; Si ACC = 0, saut instr 08.
+ADD 10; ACC <- ACC + R[n]
+STORE 10; garder val emp 10.
+JUMG 02; Saut instruction 02.
+WRITE ;
+STOP ;

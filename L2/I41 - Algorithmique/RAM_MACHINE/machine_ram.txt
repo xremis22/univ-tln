@@ -1,0 +1,69 @@
+READ ; ACC <- E[i++] ~ Lit un entier sur la bande d'entrée et le range dans l'ACC.
+
+WRITE ; s[j++] <- ACC ~ Ecriture : écrit le contenu de l'ACC sur la bande de sortie.
+
+
+
+LOAD #n; ACC <- n ~ Absolu : charge la valeur de n dans l'ACC.
+
+LOAD n; ACC <- R[n] ~ Direct : charge le contenu du registre n dans l'ACC.
+
+LOAD @n; ACC <- R[R[n]] ~ Indirect : charge le contenu du registre R[n] dans l'ACC.
+
+STORE n; R[n] <- ACC ~ Direct : range le contenu de l'ACC dans le registre n.
+
+STORE @n; R[R[n]] <- ACC ~ Indirect : range le contenu de l'ACC dans le registre R[n]
+
+
+
+DEC n; R[n] <- R[n] - 1 ~ Décrement : décremente le contenu du registre n.
+
+DEC @n; R[n] <- R[R[n]] - 1 ~ Décrement indirect : décremente le contenu du registre R[n].
+
+INC n; R[n] <- R[n] + 1 ~ Incrément : incrémente le contenu du registre n.
+
+INC @n; R[n] <- R[R[n]] + 1 ~ Incrément indirect : incrémente le contenu du registre R[n].
+
+ADD #n; ACC <- ACC + n ~ Addition abstraite : ajoute la valeur n à l'ACC.
+
+ADD n; ACC <- ACC + R[n] ~ Addition directe : ajoute le contenu du registre n à l'ACC.
+
+ADD @n; ACC <- ACC + R[R[n]] ~ Addition indirecte : ajoute le contenu du registre R[n] à l'ACC.
+
+SUB #n; ACC <- ACC - n ~ Soustraction abstraite : soustrait la valeur n à l'ACC.
+
+SUB n; ACC <- ACC - R[n] ~ Soustraction directe : soustrait le contenu du registre n à l'ACC.
+
+SUB @n; ACC <- ACC - R[R[n]] ~ Soustraction indirecte : soustrait le contenu du registre R[n] à l'ACC.
+
+MUL #n; ACC <- ACC x n ~ Produit abstrait : multiplie la valeur n à l'ACC.
+
+MUL n; ACC <- ACC x R[n] ~ Produit direct : multiplie le contenu du registre de n à l'ACC.
+
+MUL @n; ACC <- ACC x R[R[n]] ~ Produit indirect : multiplie le contenu du registre R[n] à l'ACC.
+
+DIV #n; ACC <- ACC / n ~ Quotient abstrait : quotiente l'ACC par n.
+
+DIV n; ACC <- ACC / R[n] ~ Quotient direct : quotiente l'ACC par le contenu du registre n.
+
+DIV @n; ACC <- ACC / R[R[n]] ~ Quotient indirect : quotiente l'ACC par le contenu du registre R[n].
+
+MOD #n; ACC <- ACC % n ~ Modulo abstrait : réduit l'ACC modulo n.
+
+MOD n; ACC <- ACC % R[n] ~ Modulo direct : réduit l'ACC modulo le contenu du registre n.
+
+MOD @n; ACC <- ACC % R[R[n]] ~ Modulo indirect : réduit l'ACC modulo le contenu du registre R[n].
+
+
+
+JUMP n; CO <- n ~ Saute à l'instruction n.
+
+JUMZ n; IF (ACC = 0), CO <- n ~ Saute à l'instruction n si ACC = 0.
+
+JUML n; IF (ACC < 0), CO <- n ~ Saute à l'instruction n si ACC < 0.
+
+JUMG n; IF (ACC > 0), CO <- n ~ Saute à l'instruction n si ACC > 0.
+
+
+
+NOP ; No OPeration (instruction vide).

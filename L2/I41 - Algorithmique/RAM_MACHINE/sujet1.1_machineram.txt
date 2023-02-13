@@ -1,0 +1,19 @@
+READ ; lire la première valeur et mettre sur ACC.
+STORE 10; garder la valeur emp 10.
+LOAD #1; Saisit 1 dans l'ACC.
+STORE 20; Stock la val de l'ACC dans emp 20.
+READ ; lire la 2è valeur et mettre sur l'ACC.
+JUMZ 12; Si ACC = 0, saut instr (SUB);
+ADD 10; ACC <- ACC + R[n];
+STORE 10; garder val ACC dans emp 10.
+LOAD 20; cpt
+ADD #1; cpt += 1
+STORE 20;
+JUMG 04; Saut instruction 04 (READ).
+SUB #1;
+LOAD 20;
+WRITE ;
+LOAD 10;
+WRITE ;
+STOP ;
+
