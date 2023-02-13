@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+/* int main(){
+  a = scanf("%s", a);
+  printf(a);
+  printf("Hello World\n");
+  return 0;
+} */
+
+int main(int argc, char *argv[]){
+  for (int i = 1; i < argc, i++){
+    puts(argv[i]);
+  }
+  printf("Hello World\n");
+  return 0;
+}

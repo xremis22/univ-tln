@@ -1,0 +1,129 @@
+sajamibo621@u1-001-10 : 02/04/22
+ _                                             
+| |_ _ __    ___  ___  ___     ___ _   _ ___   
+| __| '_ \  / __|/ _ \/ __|   / __| | | / __|  
+| |_| |_) | \__ \  __/ (__ _  \__ \ |_| \__ \_ 
+ \__| .__/  |___/\___|\___(_) |___/\__, |___(_)
+    |_|                            |___/       
+
+ ---
+sajamibo621-u1-001-10
+
+==========================================================
+0. Préparer votre répertoire de travail
+==========================================================
+
+a. mkdir
+b. cd
+c. etc...
+
+==========================================================
+1. Tour de l'hôte
+==========================================================
+a. Nom de la machine ?
+b. Mémoire disponible ?
+c. Archictecture ?
+d. Utilisez gdb pour détailler l'architerture.
+e. adresse ip ?
+ 
+==========================================================
+2. manuel
+==========================================================
+a. Quels sont les auteurs de la commande ls ?
+b. Quels sont les auteurs de la commande echo ?
+c. A quoi sert l'option --help de la commande echo ?
+d. Pourquoi echo --help ne fournit pas d'aide ?
+e. Quelles est l'utilité de l'option -e de la commande echo
+
+==========================================================
+3. La routine : bc, wc, sort, uniq, redirection, pipe
+==========================================================
+a. Quelle est la distribution des chiffres de 2^1024
+b. Ecrire 12638830 en base hexadécimale, FADA en base 10 !
+c. calculer le produit des (2^31 - 2^i) pour i=0,1,..,31  
+d. Le nombre 2^31 - 1 est-il premier
+
+==========================================================
+4. Filtrage  : grep, sed,  
+==========================================================
+a. Quel est le mot le plus fréquent dans le manuel de gcc
+b. Quelles machines du batiment U sont éteintes ?
+c. Quels sont les binaires nommés par deux ou trois lettres
+d. Qui s'est récemment logé sur la machine ?
+e. Quel est le mot le plus long de ce fichier ?
+
+
+==========================================================
+5. assemblage  
+==========================================================
+
+a. Ecrire une source avec une fonction int prd( int x, int y)
+   qui retourne le produit x*y, utilisée dans un main pour
+   retourner le produit de 23 et 17. 
+b. Observer le code assembleur correspondant.
+c. Quelles sont les instructions les plus utilisées ?
+d. Quels sont les registres les plus utilisés ?
+
+
+==========================================================
+6. bash
+==========================================================
+
+a. Quelle est l'utilité de la variable PS1 ?
+b. Comment écrire 256 fois le caractère x ?
+c. Quels fichiers ont été modifiés dans récemment ?
+d. Faire un diagnostic !
+
+
+==========================================================
+7. Un petit débordement
+==========================================================
+
+Pour maintenante et la suite, il convient d'utiliser les
+
+options de compilation :  -Wall  -g  -fno-stack-protector -no-pie
+
+
+Observez le code de loop.c
+
+a. Compiler loop.c en une commande nommée loop
+b. Lancer loop. 
+c. Commenter.
+d. Stopper la commande, relancer en node détachée.
+e. Utiliser top pour repérer le processus.
+f. Intercepter le processus avec gdb.
+g. Faire un diagnostic précis avec gdb.
+
+==========================================================
+8. Un premier exemple simple de buffer overflow
+==========================================================
+
+Obervez le code de source de pwd.c. 
+
+a. A quoi sert la fonction crypt ?
+b. Quel rôle joue  la fonction  hashpass ?
+c. Le code source contient une vulnérabilité. Laquelle ? 
+d. Utiliser gdb pour cartographier la pile du main.
+e. Comment exploiter cette vulnérabilité ?
+f. Essayez de passer joker !
+g. admin ?
+
+==========================================================
+9. Un retour dans les tests...
+==========================================================
+
+Observez le code source jmp.c.  
+
+a. A quoi sert la fonction test ?
+b. Identifiez une vulnérabilité.
+c. Comment l'exploiter pour forcer l'exécution de test.
+d. scriptez!
+
+
+=========================================================
+A. Conseils de lecture
+=========================================================
+
+a. http://www.linuxfocus.org/Francais/May2001/article190.shtml
+b. https://arxiv.org/pdf/cs/0405073.pdf
+
